@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Maths Simplified | Core Math Tools</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="fixed-nav">
+    <button class="nav-btn" data-nav="home">🏠 Home</button>
+    <button class="nav-btn" data-nav="sets">🧩 Set Theory</button>
+    <button class="nav-btn" data-nav="ap">📈 AP Series</button>
+    <button class="nav-btn" data-nav="about">👥 About Us</button>
+</div>
+
+<!-- HOME Section -->
+<section id="home" class="math-section">
+    <div class="hero-bg-pattern"></div>
+    <div class="math-symbols-bg" id="mathBg"></div>
+    <div class="hero-glass">
+        <div class="brand-name">Maths Simplified</div>
+        <div style="font-size:1.3rem; margin: 12px 0;">Core Concepts Made Easy ✨</div>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 20px 0;">
+            <span style="background:#e0e7ff; padding:6px 20px; border-radius:40px;">Set Theory</span>
+            <span style="background:#e0e7ff; padding:6px 20px; border-radius:40px;">Arithmetic Progression</span>
+        </div>
+        <button class="btn-explore" id="exploreBtn">Explore Topics →</button>
+    </div>
+</section>
+
+<!-- SET THEORY SECTION -->
+<section id="sets" class="math-section">
+    <div class="glass-card">
+        <span class="topic-badge">🧩 SET THEORY</span>
+        <h2>Set Operations</h2>
+
+        <div class="formula-card">
+            A ∪ B &nbsp; | &nbsp; A ∩ B &nbsp; | &nbsp; A − B &nbsp; | &nbsp; B − A
+        </div>
+
+        <div class="flex-controls">
+            <div class="ctrl">
+                <label>🔵 Set A (comma separated)</label>
+                <input type="text" id="setA">
+            </div>
+
+            <div class="ctrl">
+                <label>🟣 Set B (comma separated)</label>
+                <input type="text" id="setB">
+            </div>
+        </div>
+        
+        <div class="operator-panel">
+            <button data-op="union" class="op-btn active">∪ Union</button>
+
+            <button data-op="intersection" class="op-btn">
+                ∩ Intersection
+            </button>
+
+            <button data-op="aMinusB" class="op-btn">
+                A − B
+            </button>
+
+            <button data-op="bMinusA" class="op-btn">
+                B − A
+            </button>
+        </div>
+        
+        <div id="setResultDisplay" class="result-stack"></div>
+
+        <button class="primary" id="applySetOp">
+            🚀 Compute Result
+        </button>
+    </div>
+</section>
+
+<!-- ARITHMETIC PROGRESSION SECTION -->
+<section id="ap" class="math-section">
+    <div class="glass-card">
+        <span class="topic-badge">📈 ARITHMETIC PROGRESSION</span>
+        <h2>Sequence & Sum Calculator</h2>
+        <div class="formula-card">
+            aₙ = a₁ + (n-1)d &nbsp; | &nbsp; Sₙ = n/2 × (a₁ + aₙ)
+        </div>
+
+        <div class="flex-controls">
+            <div class="ctrl">
+                <label>a₁ (First term)</label>
+                <input type="number" id="apA1">
+            </div>
+
+            <div class="ctrl">
+                <label>d (Common difference)</label>
+                <input type="number" id="apD">
+            </div>
+
+            <div class="ctrl">
+                <label>n (Number of terms)</label>
+                <input type="number" id="apN">
+            </div>
+        </div>
+
+        <button class="primary" id="computeApBtn">
+            📊 Calculate
+        </button>
+
+        <div id="apResult" class="result-stack"></div>
+    </div>
+</section>
+
+<!-- ABOUT US SECTION -->
+<section id="about" class="math-section">
+    <div class="glass-card">
+        <span class="topic-badge">👥 ABOUT US</span>
+        <h2>Meet The Team</h2>
+
+        <div class="about-container">
+
+            <div class="student-card">
+                <img src="IMAGE 1(1).jpg" class="student-img">
+
+                <div class="student-name">Palak Saini</div>
+
+                <div class="student-role">
+                    Lead Developer & Designer
+                </div>
+
+                <div class="student-desc">
+                    Passionate about making math accessible through clean interfaces and interactive tools.
+                </div>
+
+                <a href="https://www.linkedin.com/in/palak-saini-87157138a?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                    Linkedin Profile
+                </a>
+            </div>
+
+            <div class="student-card">
+                <img src="IMAGE 2(2).jpg" class="student-img">
+
+                <div class="student-name">Mishti Raturi</div>
+
+                <div class="student-role">
+                    Content & Logic Specialist
+                </div>
+
+                <div class="student-desc">
+                    Focused on simplifying complex mathematical concepts into easy-to-understand modules.
+                </div>
+
+                <a href="https://www.linkedin.com/in/mishti-raturi-411b62362?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                    Linkedin Profile
+                </a>
+            </div>
+
+        </div>
+
+        <div class="teacher-card">
+            <img src="IMAGE 3(3).jpg" class="teacher-img">
+
+            <div class="teacher-name">
+                Dr. Abhishek Thakur
+            </div>
+
+            <div class="teacher-title">
+                Project Guide & Professor
+            </div>
+
+            <div class="student-desc">
+                Professor of Front end enginerring | Guiding us to bring clarity and creativity in front end.
+            </div>
+
+            <a href="https://www.linkedin.com/in/dr-abhishek-thakur-00123321?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                Linkedin Profile
+            </a>
+        </div>
+
+        <div class="credit-text">
+            <strong>Special Thanks</strong><br>
+
+            This project was completed under the guidance and mentorship of 
+            <strong>Dr. Abhishek Thakur</strong>.<br>
+
+            His support and expertise made this learning tool possible. 🙏
+        </div>
+    </div>
+</section>
+
+<section id="ending" class="math-section ending-section">
+    <div class="glass-card ending-card">
+        <span class="topic-badge">✨ INSPIRATION</span>
+
+        <h2>Keep Exploring</h2>
+
+        <div class="quote-text">
+            "Mathematics turns chaos into order."
+        </div>
+
+        <button class="restart-btn" id="restartBtn">
+            ✨ Start Again ✨
+        </button>
+    </div>
+</section>
+
+<!-- JS LINK -->
+<script src="script.js"></script>
+
+</body>
+</html>
